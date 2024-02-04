@@ -1,0 +1,153 @@
+:root {
+    --wedding: #ffe7cc;
+    --navy: #002e94;
+    --blue: #083aa9;
+    --beige: #e1ceb5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--wedding);
+}
+
+.container {
+    display: flex;
+    /* grid-template-columns: 20% 80%;
+    gap: 0px; */
+}
+
+header {
+    background-color: navy;
+    flex: 1 20%;
+    color: var(--wedding);
+}
+
+.header-title {
+    margin-left: 1rem;
+}
+
+nav ul {
+    /* background-color: aqua; */
+    /* margin-left: 1rem; */
+    width: 100%;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--wedding);
+}
+
+nav li a:hover {
+    background-color: var(--blue);
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: #ffe7cc;
+    color: var(--navy);
+    flex: 1 80%;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* hamburger menu style */
+
+
+.side-menu {
+    display: none;
+}
+
+.hamb {
+    position: absolute;
+    top: 2.3rem;
+    left: 80%;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.hamb-line {
+    display: none;
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    position: relative;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background-color: white;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.side-menu:checked ~ nav.active {
+    display: flex;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+@media (max-width: 972px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    .hamb-line {
+        display: block;
+    }
+
+    nav.active {
+        display: none;
+    }
+    
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    .main {
+        margin-top: 170px;
+    }
+}

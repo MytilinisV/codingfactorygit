@@ -1,0 +1,28 @@
+/* XS, S, M */
+@media (max-width: 991px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* L */
+@media (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* XL */
+@media (min-width: 1201px) and (max-width: 1400px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* XXL */
+@media (min-width: 1401px) {
+    body {
+        background-color: blue;
+    }
+}
+

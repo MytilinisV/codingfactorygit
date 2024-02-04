@@ -1,0 +1,91 @@
+:root {
+  --navy: #002E94;
+  --wedding: #ffe7cc; /* το καλει το var(--wedding) */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background-color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--navy);
+  color: var(--wedding);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header-title {
+  margin-left: 1rem; /* αφηνει ενα κενο */
+}
+
+/* .aueb-img {
+  width:100%;
+  height: auto;
+  border: 2px double white;
+} */
+
+nav {
+  color: blue;
+}
+
+nav ul {
+  display: flex; /* στοιχιση σε μια γραμμη */
+}
+
+nav li {
+  list-style: none;
+  color: var(--wedding);
+}
+
+nav li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #ffe7cc;
+}
+nav li a:hover {
+  background-color: var(--navy);
+}
+
+.banner {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.banner img {
+  width: 300px;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 50px;
+}
+
+section {
+  padding: 1rem
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #eee;
+  border: 1px solid black;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+} /* 7:05 */
+
+.bgcolor-wedding {
+  background-color: var(--wedding);
+}

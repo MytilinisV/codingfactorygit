@@ -1,0 +1,39 @@
+.static {
+    border: 1px solid green;
+    position: static;
+}
+
+.relative {
+    position: relative;
+    left: 30px;
+    top: 20px; /* βαζει το αντικειμενο σε αλλη θεση */
+    border: 3px solid green;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    border: 1px solid black;
+    /* bottom: 0; */ /* θα το παει μεχρι κατω */
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    /* Κρατάει το position fixed σταθερο */
+}
+
+.relative1 {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    background-color: aqua;
+}

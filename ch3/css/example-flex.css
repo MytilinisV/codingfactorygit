@@ -1,0 +1,9 @@
+.container {
+    display: flex; /* βαζει headers το ενα διπλα στο αλλο*/
+    background-color: lightblue;
+    height: 200px;
+    justify-content: space-around; /* justified στοιχιση στα heading που εχω δωσει (space-around). space-between, κολλάει τα heads στην ακρη.*/
+    align-items: center; /* στοίχιση στην μέση με βαση το height Που εχω δωσει */
+    /* align-items:start; Τα βάζει πάνω */
+    /* align-items: end; Τα βάζει κάτω */
+}
