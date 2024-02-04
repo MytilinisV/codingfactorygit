@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/payment-form.css">
+    <title>Φόρμα Πληρωμής</title>
+</head>
+<body>
+    <form action="">
+
+        <!-- fieldset της φόρμας πληρωμής. -->
+        <fieldset class="field">
+            <h1>Φόρμα Πληρωμής</h1>
+            <p>Τα υποχρεωτικά πεδία ακολουθούνται από <abbr title="Required field">*</abbr></p>
+
+            <h2>Προσωπικά Στοιχεία</h2>
+
+            <!-- fieldset με τις επιλογές mr/mrs/dr -->
+            <fieldset class="title-field">
+                <legend>Title</legend>
+                <div>
+                    <input type="radio" name="mr" id="mr">
+                    <label for="mr">Mr.</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="mrs" id="mrs">
+                    <label for="mrs">Mrs.</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="dr" id="dr">
+                    <label for="dr">Dr.</label>
+                </div>
+            </fieldset>
+            
+            <!-- textbox για το όνομα/mail/password. -->
+            <div class="textbox-names">
+                <div>
+                    <label class="label-name" for="name">Name:</label>
+                    <abbr title="Required field">*</abbr>
+                    <input class="input-field" type="text" name="name" id="Name">
+                </div>
+
+                <div>
+                    <label class="label-name" for="email">E-mail:</label>
+                    <abbr title="Required field">*</abbr>
+                    <input class="input-field" type="text" name="email" id="Email">
+                </div>
+
+                <div>
+                    <label class="label-name" for="password">Password:</label>
+                    <abbr title="Required field">*</abbr>
+                    <input class="input-field" type="password" name="password" id="Password">
+                </div>
+            </div>
+            <h2>Πληροφορίες Πληρωμής</h2>
+            
+            <!-- Επιλογή κάρτας/αριθμού κάρτας/ημερομηνία λήξης και submit button -->
+            <div class="payment-info">
+                <div class="card-info-box">
+                    <label for="cardType">Card Type: </label>
+                    <select name="cardType" id="cardType">
+                        <option value="" selected disabled>Please select a card type.</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                    </select>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <label for="cardNumber">Card number: <abbr title="Required field">*</abbr></label>
+                    <input type="text">
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <label for="expDate">Expiration Date: <abbr title="Required field">*</abbr></label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="submit-button">
+                <input type="submit" value="Προχωρήστε στην πληρωμή">
+            </div>
+        </fieldset>
+    </form>    
+</body>
+</html>
